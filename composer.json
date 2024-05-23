@@ -1,64 +1,64 @@
 {
-    "name": "vinelab/neoeloquent",
-    "description": "Laravel wrapper for the Neo4j graph database REST interface",
-    "keywords": [
-        "neo4j",
-        "ogm",
-        "graph",
-        "database",
-        "neoeloquent"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Abed Halawi",
-            "email": "abed.halawi@vinelab.com"
-        },
-        {
-            "name": "Kinane Domloje",
-            "email": "kinane@vinelab.com"
-        }
-    ],
-    "require": {
-        "php": "^8.2",
-        "illuminate/container": "^10.0",
-        "illuminate/contracts": "^10.0",
-        "illuminate/database": "^10.0",
-        "illuminate/events": "^10.0",
-        "illuminate/support": "^10.0",
-        "illuminate/pagination": "^10.0",
-        "illuminate/console": "^10.0",
-        "nesbot/carbon": "^2.0",
-        "laudis/neo4j-php-client": "^3.0"
+  "name": "vinelab/neoeloquent",
+  "description": "Laravel wrapper for the Neo4j graph database REST interface",
+  "keywords": [
+    "neo4j",
+    "ogm",
+    "graph",
+    "database",
+    "neoeloquent"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Abed Halawi",
+      "email": "abed.halawi@vinelab.com"
     },
-    "require-dev": {
-        "mockery/mockery": "~1.6.0",
-        "phpunit/phpunit": "^10.0",
-        "symfony/var-dumper": "*",
-        "fakerphp/faker": "^1.9.1",
-        "composer/composer": "^2.6"
-    },
-    "autoload": {
-        "psr-4": {
-            "Vinelab\\NeoEloquent\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Vinelab\\NeoEloquent\\Tests\\": "tests/"
-        }
-    },
-    "minimum-stability": "stable",
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Vinelab\\NeoEloquent\\NeoEloquentServiceProvider"
-            ]
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "php-http/discovery": true
-        }
+    {
+      "name": "Kinane Domloje",
+      "email": "kinane@vinelab.com"
     }
+  ],
+  "require": {
+    "php": "^8.2",
+    "illuminate/container": "^11.0",
+    "illuminate/contracts": "^11.0",
+    "illuminate/database": "^11.0",
+    "illuminate/events": "^11.0",
+    "illuminate/support": "^11.0",
+    "illuminate/pagination": "^11.0",
+    "illuminate/console": "^11.0",
+    "nesbot/carbon": "^2.0",
+    "laudis/neo4j-php-client": "^3.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "~1.6.0",
+    "phpunit/phpunit": "^10.0",
+    "symfony/var-dumper": "*",
+    "fakerphp/faker": "^1.9.1",
+    "composer/composer": "^2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vinelab\\NeoEloquent\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vinelab\\NeoEloquent\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Vinelab\\NeoEloquent\\NeoEloquentServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
 }
